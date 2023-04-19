@@ -1,9 +1,12 @@
 package abstraction.eq3Producteur3;
 
 
+<<<<<<< HEAD
 import java.util.HashMap;
 import java.util.Set;
 
+=======
+>>>>>>> branch 'catastrophe' of https://github.com/Dahan13/CACAO-2023
 import java.awt.Color;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -11,8 +14,11 @@ import java.util.Set;
 
 import abstraction.eqXRomu.filiere.Filiere;
 import abstraction.eqXRomu.general.Journal;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> branch 'catastrophe' of https://github.com/Dahan13/CACAO-2023
 import abstraction.eqXRomu.produits.Feve;
 
 
@@ -69,7 +75,10 @@ public class Catastrophe extends Producteur3{
 			}
 		
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'catastrophe' of https://github.com/Dahan13/CACAO-2023
 
 	/**
 	 * @author NAVEROS Marine
@@ -98,17 +107,21 @@ public class Catastrophe extends Producteur3{
 			
 		}
 		
-		
-		
-		
+			
 		
 	}
 	
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'catastrophe' of https://github.com/Dahan13/CACAO-2023
 	//Pour modéliser la grève générale, on va considérer les champs qui ne sont pas récoltés seront une perte de fève
 
+<<<<<<< HEAD
 	//Pour modéliser la greve generale, on va considerer les champs qui ne sont pas recoltes seront une perte de fève
 
+=======
+>>>>>>> branch 'catastrophe' of https://github.com/Dahan13/CACAO-2023
 	protected void GreveGeneral() {
 		//On a autant d'employé que d'hectare Utilise
 		Integer nbrgreviste = (int) Math.round(super.getHectaresUt()*0.8);
@@ -125,10 +138,13 @@ public class Catastrophe extends Producteur3{
 		
 		
 	}
+<<<<<<< HEAD
 
 	
 	
 	
+=======
+>>>>>>> branch 'catastrophe' of https://github.com/Dahan13/CACAO-2023
 	
 	
 	
