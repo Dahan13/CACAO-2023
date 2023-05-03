@@ -27,6 +27,8 @@ public class Producteur3 extends Bourse3  {
 
 	private Double SeuilHG;
 	private Double SeuilMG;
+	
+	private boolean popupOn;
 
 	private Integer HectaresLibres; /*Repertorie le nombre d'hectares libres que l'on possede*/
 	private Integer HectaresUtilises; /*Repertorie le nombre d'hectares que l'on utilise*/
@@ -41,6 +43,7 @@ public class Producteur3 extends Bourse3  {
 	 */
 	public Producteur3() {
 		super();
+		this.popupOn = false;
 		this.fields = new Champs();
 		this.SeuilHG = 0.;
 		this.SeuilMG = 0.;
@@ -477,7 +480,7 @@ public class Producteur3 extends Bourse3  {
 			HashMap<Integer, Integer> Fields =fields.getChamps().get("C");
 			double hectarMburnt = 0;
 			double hectarHburnt = 0;
-			double Degat =0;
+			double Degat = 0;
 			
 			Set<Integer> KeyM = FieldsM.keySet();
 			Set<Integer> KeyH = FieldsH.keySet();
@@ -494,6 +497,8 @@ public class Producteur3 extends Bourse3  {
 		        Timer timer = new Timer();
 				ControlTimeGif monTimerTask = new ControlTimeGif(popup);
 				timer.schedule(monTimerTask, 3000);
+				monTimerTask.setOn(true);
+				this.popupOn = monTimerTask.isOn;
 				*/
 			 Degat=quantiteBruleH.getValeur();		
 				
@@ -510,6 +515,8 @@ public class Producteur3 extends Bourse3  {
 		        Timer timer = new Timer();
 				ControlTimeGif monTimerTask = new ControlTimeGif(popup);
 				timer.schedule(monTimerTask, 3000);
+				monTimerTask.setOn(true);
+				this.popupOn = monTimerTask.isOn;
 				*/
 				 Degat=quantiteBruleM.getValeur();
 			}
@@ -526,6 +533,8 @@ public class Producteur3 extends Bourse3  {
 		        Timer timer = new Timer();
 				ControlTimeGif monTimerTask = new ControlTimeGif(popup);
 				timer.schedule(monTimerTask, 3000);
+				monTimerTask.setOn(true);
+				this.popupOn = monTimerTask.isOn;
 				*/
 				
 			}
@@ -551,7 +560,7 @@ public class Producteur3 extends Bourse3  {
 	 */	
 	public void Cyclone() {
 		/*
-		JFrame popup = new JFrame("Cyclone !");		
+		JFrame popup = new JFrame("Cyclone !");
 		popup.setLocation(300, 100);
 		ImageIcon icon = new ImageIcon("./src/abstraction/eq3Producteur3/Gif/Cyclone.gif");
 		JLabel label = new JLabel(icon);
@@ -561,6 +570,8 @@ public class Producteur3 extends Bourse3  {
         Timer timer = new Timer();
 		ControlTimeGif monTimerTask = new ControlTimeGif(popup);
 		timer.schedule(monTimerTask, 3000);
+		monTimerTask.setOn(true);
+		this.popupOn = monTimerTask.isOn;
 		*/
 		Champs fields = this.getFields();
 		HashMap<Integer,Integer> FieldH = fields.getChamps().get("H");
@@ -605,6 +616,8 @@ public class Producteur3 extends Bourse3  {
 		Timer timer = new Timer();
 		ControlTimeGif monTimerTask = new ControlTimeGif(popup);
 		timer.schedule(monTimerTask, 3000);
+		monTimerTask.setOn(true);
+		this.popupOn = monTimerTask.isOn;
 		*/
 		//On a autant d'employé que d'hectare Utilise
 		Integer nbrgreviste = (int) Math.round(this.getHectaresUt()*this.pourcentageGrevise.getValeur());
